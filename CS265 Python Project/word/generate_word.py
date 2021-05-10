@@ -6,7 +6,7 @@ import nltk
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv('../word/list_of_word.csv')
+df = pd.read_csv('list_of_word.csv')
 load_list = df['All_Word'].tolist()
 
 url = input("URL: ")

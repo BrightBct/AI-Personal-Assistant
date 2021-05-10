@@ -1,8 +1,8 @@
 import requests
 
 from bs4 import BeautifulSoup
-from summarization.sum_function import search as search_summary
-from summarization.sum_function import text_summarization
+from sum_function import search as search_summary
+from sum_function import text_summarization
 
 
 def print_sum(link_search, model, tokenizer, device):

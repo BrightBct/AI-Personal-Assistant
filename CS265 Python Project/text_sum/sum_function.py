@@ -75,4 +75,3 @@ def text_summarization(summary: str, model, tokenizer, device):
 
     output = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
     return output
-

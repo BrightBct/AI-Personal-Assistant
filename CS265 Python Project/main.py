@@ -2,8 +2,8 @@ import torch
 
 from transformers import T5Tokenizer
 from transformers import T5ForConditionalGeneration
-from summarization import image_summarization
-from summarization import url_summarization
+from text_sum import image_summarization
+from text_sum import url_summarization
 from practice_english import practice_english
 
 model = T5ForConditionalGeneration.from_pretrained('t5-base')

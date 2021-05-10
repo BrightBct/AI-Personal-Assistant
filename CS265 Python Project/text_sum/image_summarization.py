@@ -3,8 +3,8 @@ import pytesseract
 import requests
 
 from PIL import Image
-from summarization.sum_function import search as search_summary
-from summarization.sum_function import text_summarization
+from sum_function import search as search_summary
+from sum_function import text_summarization
 
 
 def image_sum(model, tokenizer, device):
