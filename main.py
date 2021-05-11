@@ -8,7 +8,7 @@ import subprocess
 import requests
 import torch
 import pyjokes
-# import nltk
+import nltk
 
 from transformers import T5Tokenizer
 from transformers import T5ForConditionalGeneration
@@ -21,7 +21,11 @@ from all_function import practice_english
 from all_function import dictionary
 from all_function.word import generate_word
 
-print('Loading your AI personal assistant - G One')
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('stopwords')
+
+print('Loading your AI personal assistant - AI Education')
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -65,7 +69,7 @@ def take_command():
         return statement
 
 
-speak("Loading your AI personal assistant G-One")
+speak("Loading your AI personal assistant AI Education")
 wish_me()
 
 if __name__ == '__main__':
@@ -77,8 +81,8 @@ if __name__ == '__main__':
 
         if "good bye" in statement or "goodbye" in statement or "ok bye" in statement or "okay bye" in statement \
                 or "stop" in statement or "turn off" in statement:
-            speak('Your personal assistant G-one is shutting down, Good bye')
-            print('Your personal assistant G-one is shutting down, Good bye')
+            speak('Your personal assistant AI Education is shutting down, Good bye')
+            print('Your personal assistant AI Education is shutting down, Good bye')
             break
 
         if 'wikipedia' in statement:
@@ -139,10 +143,10 @@ if __name__ == '__main__':
             speak(f"the time is {strTime}")
 
         elif 'who are you' in statement or 'what can you do' in statement:
-            speak('I am G-one version 1 point O your persoanl assistant. I am programmed to minor tasks like opening '
-                  'youtube,google chrome,gmail and stackoverflow ,predict time,take a photo,search wikipedia,predict'
-                  'weather in different cities , get top headline news from times of india and you can ask me '
-                  'computational or geographical questions too!')
+            speak('I am AI Education version 1 point O your personal assistant. I am programmed to minor tasks like '
+                  'opening youtube, google chrome, gmail and stackoverflow, predict time, take a photo, '
+                  'search wikipedia, predict weather in different cities, '
+                  'get top headline news from times of india and you can ask me ')
 
         elif "who made you" in statement or "who created you" in statement or "who discovered you" in statement:
             speak("I was built by Mirthula")
@@ -162,7 +166,7 @@ if __name__ == '__main__':
 
         elif 'search' in statement:
             statement = statement.replace("search", "")
-            webbrowser.open_new_tab(statement)
+            webbrowser.open_new_tab("https://www.google.com/search?q="+statement)
             time.sleep(5)
 
         elif "log off" in statement or "sign out" in statement:
@@ -176,8 +180,6 @@ if __name__ == '__main__':
             time.sleep(2)
 
         elif "some" in statement or "sum" in statement or "summarization" in statement:
-            # nltk.download('punkt')
-            # nltk.download('stopwords')
             word = "What do you want to summarization\n" \
                    "1.Image Url Summarization\n" \
                    "2.Url Summarization (Wiki Url)\n" \
@@ -214,7 +216,6 @@ if __name__ == '__main__':
             time.sleep(3)
 
         elif "practice" in statement or "english" in statement:
-            # nltk.download('wordnet')
             speak("Doing Practice")
             practice_english.english_practice()
             speak("Stop Practice")
@@ -228,9 +229,12 @@ if __name__ == '__main__':
             time.sleep(3)
 
         elif "dictionary" in statement:
-            speak("What method do you want to use?\n"
-                  "1.write\n"
-                  "2.speak")
+            menu = "What method do you want to use to find the meaning?\n" \
+                  "1.write\n" \
+                  "2.speak\n" \
+                  "3.type"
+            print(menu)
+            speak(menu)
             method = take_command()
             if "1" in method or "one" in method:
                 speak("1.write")
@@ -249,8 +253,25 @@ if __name__ == '__main__':
                 speak("Search"+word+"in dictionary")
                 dictionary.search_dictionary(word)
                 time.sleep(2)
+            elif "3" in method or "three" in method or "tree" in method:
+                speak("Please use console to find the meaning")
+                word = input("Word: ")
+                dictionary.search_dictionary(word)
+                time.sleep(2)
+            else:
+                speak("Did not hear anything\nExit from dictionary")
+                time.sleep(2)
 
         elif "sleep" in statement:
+            speak("Sleep 1 minute")
             time.sleep(60)
+
+        elif "love you" in statement:
+            speak("I love you too")
+            time.sleep(1.5)
+
+        elif "thank you" in statement:
+            speak("you're welcome")
+            time.sleep(1.5)
 
 time.sleep(3)
