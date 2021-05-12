@@ -1,0 +1,13 @@
+speech_recognition
+pyttsx3
+wikipedia
+torch
+pyjokes
+nltk
+contractions
+re
+bs4
+numpy
+pandas
+heapq
+pytesseract
