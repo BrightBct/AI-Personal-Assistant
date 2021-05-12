@@ -1,5 +1,13 @@
 # CS265-Project
 
+## สารบัญ
+
+- [รายละเอียดการจัดทำ project](รายละเอียดการจัดทำ project)
+- [ขั้นตอนการติดตั้ง](#ขั้นตอนการติดตั้ง)
+
+
+##รายละเอียด Project
+
 CS265 AI Python Project
 
 วิชา CS265 Artificial Intelligence Fundamentals ปัญญาประดิษฐ์เบื้องต้น
