@@ -5,6 +5,7 @@
 - [รายละเอียด project](#รายละเอียด-project)
 - [ขั้นตอนการติดตั้ง](#ขั้นตอนการติดตั้ง)
 - [ชื่อผู้พัฒนา](#ชื่อผู้พัฒนา)
+- [อ้างอิง](#อ้างอิง)
 
 ## รายละเอียด Project
 
@@ -27,6 +28,12 @@ CS265 AI Python Project
 และจะทำการติดตั้ง library ต่าง ๆ ด้วย [`pip`](https://pypi.org/project/stronghold/)
 
 โดยจะใช้ไฟล์ `requirements.txt` ในการติดตั้ง library ใช้คำสั่ง `pip install -r requirements.txt` ในการติดตั้ง
+
+## อ้างอิง
+
+เนื้อหาโค้ดหลายอย่างสามารถศึกษาได้จาก 
+
+		https://github.com/mmirthula02/AI-Personal-Voice-assistant-using-Python.git
 
 ## ชื่อผู้พัฒนา
 
