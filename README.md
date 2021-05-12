@@ -22,9 +22,11 @@ CS265 AI Python Project
 
 ตัวโปรแกรมจะใช้ python version 3.8
 
-จะติดตั้ง library ด้วย [`pip`](https://pypi.org/project/stronghold/)
+ใช้คำสั่ง `git clone https://github.com/BrightBct/CS265-Project.git` ในการนำ project ไปติดตั้ง
 
-ใช้ไฟล์ `requirements.txt` ในการติดตั้งด้วยการใช้ตำสั่ง `pip install -r requirements.txt`
+และจะทำการติดตั้ง library ต่าง ๆ ด้วย [`pip`](https://pypi.org/project/stronghold/)
+
+โดยจะใช้ไฟล์ `requirements.txt` ในการติดตั้ง library ใช้คำสั่ง `pip install -r requirements.txt` ในการติดตั้ง
 
 ## ชื่อผู้พัฒนา
 
