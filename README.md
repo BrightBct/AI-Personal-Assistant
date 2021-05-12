@@ -6,7 +6,7 @@
 - [ขั้นตอนการติดตั้ง](#ขั้นตอนการติดตั้ง)
   - [library](#library)
 - [ขั้นตอนการใช้งาน](#ขั้นตอนการใช้งาน)
-- []
+- [ผลลัพธ์การทำงาน](#ผลลัพธ์การทำงาน)
 - [อ้างอิง](#อ้างอิง)
 - [ชื่อผู้พัฒนา](#ชื่อผู้พัฒนา)
 
@@ -26,7 +26,7 @@ CS265 AI Python Project
 
 ตัวโปรแกรมจะใช้ python version 3.8
 
-ใช้คำสั่ง `git clone https://github.com/BrightBct/CS265-Project.git` ในการนำ project ไปติดตั้ง
+ใช้คำสั่ง `$ git clone https://github.com/BrightBct/CS265-Project.git` ในการนำ project ไปติดตั้ง
 
 ### library
 
@@ -50,9 +50,13 @@ CS265 AI Python Project
 
 โดยจะใช้ไฟล์ `requirements.txt` ในการติดตั้ง library 
 
-ด้วยการใช้คำสั่ง `pip install -r requirements.txt` ในการติดตั้ง
+ด้วยการใช้คำสั่ง `$ pip install -r requirements.txt` ในการติดตั้ง
 
 ## ขั้นตอนการใช้งาน
+
+ถ้าใช้ pycharm หรือ vscode สามารถใช้คำสั่ง run ที่มีมาให้ได้เลย
+
+หรือถ้าใช้ cmd จะใช้คำสั่ง `$ main.py` ในการทำงาน
 
 ## อ้างอิง
 
