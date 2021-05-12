@@ -20,7 +20,11 @@ CS265 AI Python Project
 
 ## ขั้นตอนการติดตั้ง
 
-สวัสดีครับ
+ตัวโปรแกรมจะใช้ python version 3.8
+
+จะติดตั้ง library ด้วย [`pip`](https://pypi.org/project/stronghold/)
+
+ใช้ไฟล์ `requirements.txt` ในการติดตั้งด้วยการใช้ตำสั่ง `pip install -r requirements.txt`
 
 ## ชื่อผู้พัฒนา
 
