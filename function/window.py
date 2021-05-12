@@ -28,4 +28,8 @@ def open_windows():
     canvas1.create_window(200, 180, window=button1)
 
     root.mainloop()
-    return str(url_list[0])
+    print(len(url_list))
+    if len(url_list) == 0:
+        return str("error")
+    else:
+        return str(url_list[0])

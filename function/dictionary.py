@@ -49,3 +49,17 @@ def search_dictionary(word):
         if 'Interjection' in mean:
             print("Interjection\n"+mean['Interjection'][0]+"\n")
             speak("Interjection\n"+mean['Interjection'][0]+"\n")
+        print("Synonym")
+        count = 0
+        all_syn = dictionary.synonym(word)
+        len_syn = len(all_syn)
+        if len_syn > 10:
+            len_syn = 10
+        for syn in all_syn:
+            if count == len_syn:
+                break
+            print(syn, end="")
+            count += 1
+            if count != len_syn:
+                print(", ", end="")
+        print()

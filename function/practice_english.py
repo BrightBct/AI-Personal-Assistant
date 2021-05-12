@@ -18,11 +18,11 @@ def english_practice():
     mic = sr.Microphone(device_index=1)
 
     print("Start Practice\n")
-    df = pd.read_csv('all_function/word/list_of_word.csv')
+    df = pd.read_csv('function/word/list_of_word.csv')
     load_list = df['All_Word'].tolist()
-    df = pd.read_csv('all_function/result/correct.csv')
+    df = pd.read_csv('function/result/correct.csv')
     correct = df['All_Word_Correct'].tolist()
-    df = pd.read_csv('all_function/result/incorrect.csv')
+    df = pd.read_csv('function/result/incorrect.csv')
     incorrect = df['All_Word_Incorrect'].tolist()
 
     while True:
@@ -37,7 +37,7 @@ def english_practice():
             continue
 
         my_obj = gTTS(text=generate_word, lang='en', slow=False)
-        my_obj.save("all_function/audio.mp3")
+        my_obj.save("function/audio.mp3")
 
         with mic as source:
 
@@ -62,24 +62,25 @@ def english_practice():
             print("Correct")
             correct.append(generate_word)
         elif generate_word != speak_word:
+            print("Incorrect")
             print("Word is \""+generate_word, end="\" ")
-            print("but you said "+speak_word)
+            print("but you said \""+speak_word+"\"")
             incorrect.append(generate_word)
 
         print("Please Listen to AI")
         time.sleep(1)
-        playsound('all_function/audio.mp3')
+        playsound('function/audio.mp3')
         print("...")
         print('The meaning of the word : ' + synset[0].definition())
         print()
         time.sleep(1)
 
-        os.remove('all_function/audio.mp3')
+        os.remove('function/audio.mp3')
     correct = np.array(correct)
     incorrect = np.array(incorrect)
     correct = pd.DataFrame(data=correct)
     incorrect = pd.DataFrame(data=incorrect)
     correct.columns = ['All_Word_Correct']
     incorrect.columns = ['All_Word_Incorrect']
-    correct.to_csv('all_function/result/correct.csv', index=False)
-    incorrect.to_csv('all_function/result/incorrect.csv', index=False)
+    correct.to_csv('function/result/correct.csv', index=False)
+    incorrect.to_csv('function/result/incorrect.csv', index=False)

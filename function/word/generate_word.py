@@ -8,7 +8,7 @@ import pandas as pd
 
 
 def increase_word(url):
-    df = pd.read_csv('all_function/word/list_of_word.csv')
+    df = pd.read_csv('function/word/list_of_word.csv')
     load_list = df['All_Word'].tolist()
 
     scraped_data = requests.get(url)
@@ -50,4 +50,4 @@ def increase_word(url):
     load_list = np.array(load_list)
     load_list = pd.DataFrame(data=load_list)
     load_list.columns = ['All_Word']
-    load_list.to_csv('all_function/word/list_of_word.csv', index=False)
+    load_list.to_csv('function/word/list_of_word.csv', index=False)
