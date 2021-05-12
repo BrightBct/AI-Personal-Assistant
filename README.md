@@ -34,10 +34,6 @@ CS265 AI Python Project
 
 โดย library ที่ใช้มีดังนี้:
 
-โดยจะใช้ไฟล์ `requirements.txt` ในการติดตั้ง library ใช้คำสั่ง `pip install -r requirements.txt` ในการติดตั้ง
-
-## ขั้นตอนการใช้งาน
-
     1.speech_recognition
     2.pyttsx3
     3.wikipedia
@@ -51,6 +47,12 @@ CS265 AI Python Project
     11.pandas
     12.heapq
     13.pytesseract
+
+โดยจะใช้ไฟล์ `requirements.txt` ในการติดตั้ง library 
+
+ด้วยการใช้คำสั่ง `pip install -r requirements.txt` ในการติดตั้ง
+
+## ขั้นตอนการใช้งาน
 
 ## อ้างอิง
 
