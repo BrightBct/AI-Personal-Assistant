@@ -4,8 +4,11 @@
 
 - [รายละเอียด project](#รายละเอียด-project)
 - [ขั้นตอนการติดตั้ง](#ขั้นตอนการติดตั้ง)
-- [ชื่อผู้พัฒนา](#ชื่อผู้พัฒนา)
+    - [library](#library)
+- [ขั้นตอนการใช้งาน](#ขั้นตอนการใช้งาน)
+- []
 - [อ้างอิง](#อ้างอิง)
+- [ชื่อผู้พัฒนา](#ชื่อผู้พัฒนา)
 
 ## รายละเอียด Project
 
@@ -25,9 +28,29 @@ CS265 AI Python Project
 
 ใช้คำสั่ง `git clone https://github.com/BrightBct/CS265-Project.git` ในการนำ project ไปติดตั้ง
 
-และจะทำการติดตั้ง library ต่าง ๆ ด้วย [`pip`](https://pypi.org/project/stronghold/)
+### library
+
+จะทำการติดตั้ง library ต่าง ๆ ด้วย [`pip`](https://pypi.org/project/stronghold/)
+
+โดย library ที่ใช้มีดังนี้:
 
 โดยจะใช้ไฟล์ `requirements.txt` ในการติดตั้ง library ใช้คำสั่ง `pip install -r requirements.txt` ในการติดตั้ง
+
+## ขั้นตอนการใช้งาน
+
+    1.speech_recognition
+    2.pyttsx3
+    3.wikipedia
+    4.torch
+    5.pyjokes
+    6.nltk
+    7.contractions
+    8.re
+    9.bs4
+    10.numpy
+    11.pandas
+    12.heapq
+    13.pytesseract
 
 ## อ้างอิง
 
