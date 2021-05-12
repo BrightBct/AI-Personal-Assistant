@@ -33,7 +33,7 @@ CS265 AI Python Project
 
 เนื้อหาโค้ดหลายอย่างสามารถศึกษาได้จาก 
 
-		https://github.com/mmirthula02/AI-Personal-Voice-assistant-using-Python.git
+    https://github.com/mmirthula02/AI-Personal-Voice-assistant-using-Python.git
 
 ## ชื่อผู้พัฒนา
 
